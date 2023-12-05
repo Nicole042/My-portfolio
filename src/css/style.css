@@ -31,7 +31,9 @@ body.dark {
     padding-right: 0.5rem;
 }
 
-
+.title_profile {
+    width: 280px;
+}
 
 img {
     max-width: 100%;
@@ -58,14 +60,14 @@ a {
 
 b {
     display: inline-block;
-    letter-spacing: -0.35rem;
+    letter-spacing: -0.33rem;
     cursor: pointer;
     transition-delay: 0.5s;
 }
 
 u {
     display: inline-block;
-    width: 0.5rem;
+    width: 0.3rem;
 }
 
 b:hover {
@@ -206,6 +208,7 @@ a:hover::after {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 .front {
@@ -329,13 +332,15 @@ p {
     left: 0;
     transition: bottom .5s;
 }
-
-
-
 @media (min-width: 400px) {
     a {
         font-size: 1.57rem;
         width: 1.57rem;
+    }
+}
+@media (min-width: 768px) {
+    .title_profile {
+        width: auto;
     }
 }
 @media (min-width: 850px) {
