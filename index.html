@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="./src/js/main.js" defer></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/themes/splide-skyblue.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="src/img/logoBarra.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/style.css">
+    
+    <title>Portfolio</title>
+</head>
+<body class="dark">
+    <header class="header">
+        <iframe src="./fondo.html" frameborder="0">
+        </iframe>
+        <nav class="header_nav">
+            <div class="nav_start">
+                <a class="icon icon_home"
+                href="#0"><ion-icon name="home-outline"></ion-icon></a>
+
+            </div>
+            <div class="nav_center">
+                <a class="icon icon_about"
+                    href="#1"><ion-icon name="people-outline"></ion-icon></a>
+                <a class="icon icon_skills"
+                    href="#2"><ion-icon name="construct-outline"></ion-icon></a>
+                <a class="icon icon_projects"
+                    href="#3"><ion-icon name="folder-open-outline"></ion-icon></a>
+                <a class="icon icon_education"
+                    href="#4"><ion-icon name="school-outline"></ion-icon></a>
+                <a class="icon icon_achievements"
+                    href="#5"><ion-icon name="ribbon-outline"></ion-icon></a>
+                <a class="icon icon_cv"
+                    href="./src/img/CVesp.pdf" download>
+                    <ion-icon name="documents-outline"></ion-icon></a>
+            </div>
+            <div class="nav_end">
+                <a id="icon_language" class="icon icon_language" href="./english.html">
+                    <img src="./src/img/eng.png" alt="language">
+                </a>
+                <a id="icon_volume" class="icon icon_volume">
+                    <ion-icon name="volume-mute-outline"></ion-icon>
+                    <audio loop src="./src/img/sonido.mp3"></audio>
+                </a>
+                <a id="icon_mode"  class="icon icon_mode">
+                    <ion-icon name="sunny-outline"></ion-icon>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="section front container"
+        id="0">
+            <h1 class="title_profile">PROGRAMADOR WEB FULL STACK</h1>
+            <H2 class="name">Nicole Agreda Candia</H2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt, amet!</p>
+            <figure>
+                <img src="./src/img/logo_profile.png" alt="profile image">
+            </figure>
+        </section>
+        <section class="section about container" 
+        id="1">
+            <h2>Sobre mi</h2>
+            <p class="paragraph_one">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio atque beatae numquam, aut a sapiente nobis perferendis odit tenetur deserunt impedit mollitia, eaque eius quisquam, cupiditate quibusdam veniam. Aspernatur, minima.</p>
+            <h3>Aficiones</h3>
+            <ul>
+                <li>⭐Lorem, ipsum.</li>
+                <li>⭐Lorem, ipsum.</li>
+                <li>⭐Lorem, ipsum.</li>
+                <li>⭐Lorem, ipsum.</li>
+                <li>⭐Lorem, ipsum.</li>
+            </ul>
+            <iframe class="image_maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60917.90919365455!2d-66.20507512436818!3d-17.39405487437052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e373e0d9e4ab27%3A0xa2719ae9532c3e65!2sCochabamba!5e0!3m2!1ses-419!2sbo!4v1701571822413!5m2!1ses-419!2sbo" 
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section class="section skills container" id="2">
+            <h2>Habilidades</h2>
+            <article class="soft_skills">
+                 <h3 class="skill_space">Blandas</h3>
+                 <ul>
+                    <li>⭐Lorem ipsum dolor sit.</li>
+                    <li>⭐Lorem ipsum dolor sit.</li>
+                    <li>⭐Lorem ipsum dolor sit.</li>
+                    <li>⭐Lorem ipsum dolor sit.</li>
+                    <li>⭐Lorem ipsum dolor sit.</li>
+                </ul>
+             </article>
+             <article class="hard_skills">
+                <h3 class="skill_space">Duras</h3>
+                <figure class="slider_skills">
+                    <img src="./src/img/JavaScript.png" alt="hard skill">
+                    <img src="./src/img/html5.png" alt="hard skill">
+                    <img src="./src/img/css3.png" alt="hard skill">
+                    <img src="./src/img/react.png" alt="hard skill">
+                    <img src="./src/img/nodejs.png" alt="hard skill">
+                </figure>
+                <div>
+                    <button class="btn_prev"><</button>
+                    <button class="btn_next">></button>
+                </div>
+            </article>
+        </section>
+        <section class="section projects container" id="3">
+            <h2>Proyectos</h2>
+            <div class="splide">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">Slide 01</li>
+                          <li class="splide__slide">Slide 02</li>
+                          <li class="splide__slide">Slide 03</li>
+                      </ul>
+                </div>
+              </div>
+        </section>
+        <section class="section education container" id="4">
+            <h2 class="education_space">Educacion</h2>
+            <article class="local_education">
+                 <h3>Academlo</h3>
+                 <ul>
+                    <li>⭐Lorem ipsum dolor sit.</li>
+                    <li>⭐Lorem ipsum dolor sit.</li>
+                    <li>⭐Lorem ipsum dolor sit.</li>
+                    <li>⭐Lorem ipsum dolor sit.</li>
+                    <li>⭐Lorem ipsum dolor sit.</li>
+                </ul>
+             </article>
+             <article class="foreign_education">
+                <h3>Otros</h3>
+                <ul>
+                   <li>⭐Lorem ipsum dolor sit.</li>
+                   <li>⭐Lorem ipsum dolor sit.</li>
+                   <li>⭐Lorem ipsum dolor sit.</li>
+                   <li>⭐Lorem ipsum dolor sit.</li>
+                   <li>⭐Lorem ipsum dolor sit.</li>
+               </ul>
+            </article>
+        </section>
+        <section class="section achievements container" id="5">
+            <h2>Logros</h2>
+            <figure>
+                <img src="./src/img/aplausos.gif" alt="animate gif">
+            </figure>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, odit officiis, dolor vero dignissimos dolores soluta natus ea omnis dolore officia et debitis odio earum reiciendis modi ipsa necessitatibus. Tempore architecto temporibus possimus similique atque. Ut possimus ipsam quasi eligendi doloremque numquam ea aliquid, aliquam impedit earum officiis sit dolorum.</p>
+        </section>
+    </main>
+
+    <footer class="footer active">
+        <a class="icon icon_link"
+                    href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a class="icon icon_git"
+                    href="https://github.com/Nicole042"><ion-icon name="logo-github"></ion-icon></a>
+    </footer>
+</body>
+</html>

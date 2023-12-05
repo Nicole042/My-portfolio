@@ -1,0 +1,552 @@
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --color-nav:#E1C78F;
+    --color-nav-dark: #4f4442;
+    --color-title-1: #968fe9;
+    --color-title-2:#c3c5e8;
+
+}
+body {
+    max-width: 1900px;
+    margin: 0 auto;
+    font-size: 16px;
+}
+body.dark {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: inline-block;
+}
+button {
+    border: none;
+    color: inherit;
+    display: inline-block;
+}
+ul {
+    list-style: none;
+
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    font-size: 1.25rem;
+    width: 1.25rem;
+}
+
+b {
+    display: inline-block;
+    letter-spacing: -0.35rem;
+    cursor: pointer;
+    transition-delay: 0.5s;
+}
+
+u {
+    display: inline-block;
+    width: 0.5rem;
+}
+
+b:hover {
+    color:var(--color-title-1);
+    text-shadow: -2.5px 2.5px 2.5px var(--color-title-2);
+    transform: scale(1.25);
+    transition: transform 0.5s;
+}
+
+b.zoom {
+    color:var(--color-title-1);
+    text-shadow: -2.5px 2.5px 2.5px var(--color-title-2);
+    transform: scale(1.25);
+    transition: transform 0.5s;
+}
+
+.header iframe {
+    height: 100vh;
+    width: 100%;
+    max-width: 1900px;
+    position: fixed;
+    top: 0;
+}
+.header_nav {
+    height: 3rem;
+    width: 100%;
+    background-color: var(--color-nav);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem;  
+    position: fixed;
+    top: 0;
+    z-index: 20;
+}
+.dark .header_nav {
+    background-color: var(--color-nav-dark);
+}
+.nav_start,
+.nav_center,
+.nav_end {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+.skills {
+    row-gap: 30px;
+}
+.skill_space {
+    padding-bottom: 30px;
+}
+.main {
+    position: relative;
+    z-index: 10;
+}
+a {
+    font-size: 1.875rem;
+    width: 1.875rem;
+    position: relative;
+}
+a:hover {
+    transform: scale(1.25);
+}
+a:hover::after {
+    background-color: var(--color-nav);
+    position: absolute;
+    content: 'texto de prueba';
+    width: max-content;
+    font-size:1rem;
+    border: 1px solid;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.header_nav a:hover::after {
+    top: 40px;
+    left:0;
+}
+#icon_mode:hover::after {
+    top: 40px;
+    left: -202px;
+}
+#icon_volume:hover::after {
+    top: 40px;
+    left: -110px;
+}
+#icon_language:hover::after {
+    top: 40px;
+    left: -110px;
+}
+.dark a:hover::after {
+    background-color: var(--color-nav-dark);
+}
+.icon_home:hover::after {
+    content: 'Ir al inicio';
+}
+.icon_about:hover::after {
+    content: 'Sobre mi';
+}
+.icon_skills:hover::after {
+    content: 'Habilidades';
+}
+.icon_projects:hover::after {
+    content: 'Proyectos';
+}
+.icon_education:hover::after {
+    content: 'Educacion';
+}
+.icon_achievements:hover::after {
+    content: 'Logros destacados';
+}
+.icon_cv:hover::after {
+    content: 'Descarga mi CV';
+}
+.icon_language:hover::after {
+    content: 'Cambia de idioma';
+}
+.icon_volume:hover::after {
+    content: 'Prender/apagar sonido';
+}
+.icon_mode:hover::after {
+    content: 'Activa/desactiva el modo oscuro';
+}
+.icon_link:hover::after {
+    bottom: 0.69rem;
+    right: 3rem;
+    content: 'Contactame';
+}
+.icon_git:hover::after {
+    top: 0;
+    right: 2.5rem;
+    content: 'Mira mi forma de programar';
+}
+
+.section {
+    height: 100vh;
+    max-height: 700px;
+    padding: 30px 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.front {
+    padding: 110px 30px 50px 30px;
+}
+
+.front > * {
+    text-align: center;
+
+}
+h1,
+h2,
+figure,
+p {
+    padding-bottom: 45px;
+}
+.image_maps {
+    padding-top: 30px;
+}
+
+.about iframe {
+    height: 50%;
+
+}
+
+.hard_skills {
+    position: relative;
+    height: 65%;
+    width: 100%;
+}
+.slider_skills {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.hard_skills button {
+    background-color: var(--color-nav);
+    position: absolute;
+    top: 50%;
+    width: 25px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+.dark .hard_skills button {
+    background-color: var(--color-nav-dark);
+}
+.btn_prev {
+    left: 1%;
+}
+
+.btn_next {
+    right: 1%;
+}
+.splide {
+    padding: 3.125rem;
+}
+.splide__slide{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0.625rem;   
+}
+
+.splide__slide div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.splide__slide div > * {
+    width: 80%;
+    text-align: center;
+}
+
+.splide__slide figure {
+    border-radius: 20px;
+    overflow: hidden;
+}
+.education {
+    justify-content: space-evenly;
+}
+.education_space {
+    padding-top: 100px;
+}
+
+.achievements figure {
+    height: 50%;
+}
+.footer {
+    width: 80px;
+    aspect-ratio: 1;
+    margin: 20px;
+    position: sticky;
+    bottom: 20px;
+    left: 100%;
+    z-index: 100;
+    /* overflow: hidden; */
+}
+.footer .icon {
+    font-size: 35px;
+    width: 35px;
+    position: absolute;
+}
+.icon_link {
+    right: -100%;
+    transition: right .5s;
+}
+.icon_git {
+    bottom: -100%;
+    transition: bottom .5s;
+}
+.active .icon_link {
+    top: 0;
+    right: 0;
+    transition: right .5s;
+}
+.active .icon_git {
+    bottom: 0;
+    left: 0;
+    transition: bottom .5s;
+}
+
+
+
+@media (min-width: 400px) {
+    a {
+        font-size: 1.57rem;
+        width: 1.57rem;
+    }
+}
+@media (min-width: 850px) {
+    .header_nav {
+        height: 100vh;
+        max-height: 700px;
+        width: 3.125rem;
+        flex-direction: column;
+    }
+    .nav_start,
+    .nav_center,
+    .nav_end {
+     flex-direction: column;
+    }
+    a {
+        font-size: 1.875rem;
+        width: 1.875rem;
+        position: relative;
+    }
+    a:hover {
+        transform: scale(1.25);
+    }
+    a:hover::after {
+        background-color: var(--color-nav);
+        position: absolute;
+        content: 'texto de prueba';
+        width: max-content;
+        font-size:1rem;
+        border: 1px solid;
+        padding: 5px 10px;
+        border-radius: 5px;
+    }
+    .header_nav a:hover::after {
+        top: 0;
+        left: 40px;
+    }
+    .dark a:hover::after {
+        background-color: var(--color-nav-dark);
+    }
+    .icon_home:hover::after {
+        content: 'Ir al inicio';
+    }
+    .icon_about:hover::after {
+        content: 'Sobre mi';
+    }
+    .icon_skills:hover::after {
+        content: 'Habilidades';
+    }
+    .icon_projects:hover::after {
+        content: 'Proyectos';
+    }
+    .icon_education:hover::after {
+        content: 'Educacion';
+    }
+    .icon_achievements:hover::after {
+        content: 'Logros destacados';
+    }
+    .icon_cv:hover::after {
+        content: 'Descarga mi CV';
+    }
+    .icon_language:hover::after {
+        content: 'Cambia de idioma';
+    }
+    .icon_volume:hover::after {
+        content: 'Prender/apagar sonido';
+    }
+    .icon_mode:hover::after {
+        content: 'Activa/desactiva el modo oscuro';
+    }
+    .icon_link:hover::after {
+        bottom: 0.69rem;
+        right: 3rem;
+        content: 'Contactame';
+    }
+    .icon_git:hover::after {
+        top: 0;
+        right: 2.5rem;
+        content: 'Mira mi forma de programar';
+    }
+    #icon_mode:hover::after {
+        top: 0;
+        left: 40px;
+    }
+    #icon_volume:hover::after {
+        top: 0;
+        left: 40px;
+    }
+    #icon_language:hover::after {
+        top: 0;
+        left: 40px;
+    }
+
+    .section {
+        padding: 50px 50px 30px 110px;
+        display: grid;
+    }
+    .front {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        align-items: center;
+    }
+    .front h1 {
+        grid-column: span 2;
+    }
+    .front h2 {
+        grid-column: 1;
+        grid-row: 2;
+        text-align: left;
+    }
+    .front p {
+        grid-column: 1;
+        grid-row: 3;
+        text-align: left;
+        align-self: self-start;
+    }
+    .front figure {
+        grid-column: 2;
+        grid-row: 2 / span 2;
+    }
+    .image_maps {
+        padding-top: 0;
+    }
+    .about {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr 4fr);
+    }
+    .about h2 {
+        grid-column: span 2;
+    }
+    .about p {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .about h3 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .about ul {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .about iframe {
+        grid-column: 2;
+        grid-row: 2 / span 3;
+        width: 100%;
+        height: 100%;
+    }
+    .paragraph_one {
+        padding-right: 50px;
+    }
+    .skills {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 5fr;
+    }
+    .skills h2 {
+        grid-column: span 2;
+        align-self: self-end;
+    }
+    .soft_skills {
+        grid-column: 1;
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 3.125rem;
+    }
+    .soft_skills li {
+        margin: 10px 0;
+    }
+    .hard_skills {
+        grid-column: 2;
+        grid-row: 2 / 4;
+        display: flex;
+        flex-direction: column;
+        gap: 3.125rem;
+        height: 80%;
+    }
+    .projects {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 5fr;
+    }
+    .splide__slide{
+        flex-direction: row;  
+    }
+    .education {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr 5fr);
+        align-items: center;
+    }
+    .education h2 {
+        grid-column: span 2;
+        align-self: self-end;
+    }
+    .education article {
+        display: flex;
+        flex-direction: column;
+        gap: 3.125px;
+    }
+    .education li {
+        margin: 10px 0;
+    }
+    .achievements {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr 5fr);
+        align-items: center;
+    }
+    .achievements h2 {
+        grid-column: span 2;
+        align-self: self-end;
+    }
+    .achievements figure {
+        justify-self: center;
+    }
+
+}

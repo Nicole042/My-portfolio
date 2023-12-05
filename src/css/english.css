@@ -1,0 +1,137 @@
+
+a {
+    font-size: 1.875rem;
+    width: 1.875rem;
+    position: relative;
+}
+a:hover {
+    transform: scale(1.25);
+}
+a:hover::after {
+    background-color: var(--color-nav);
+    position: absolute;
+    content: 'texto de prueba';
+    width: max-content;
+    font-size:1rem;
+    border: 1px solid;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.header_nav a:hover::after {
+    top: 40px;
+    left:0;
+}
+#icon_mode:hover::after {
+    top: 40px;
+    left: -150px;
+}
+#icon_volume:hover::after {
+    top: 40px;
+    left: -110px;
+}
+#icon_language:hover::after {
+    top: 40px;
+    left: -110px;
+}
+.dark a:hover::after {
+    background-color: var(--color-nav-dark);
+}
+.icon_home:hover::after {
+    content: 'Go to home';
+}
+.icon_about:hover::after {
+    content: 'About me';
+}
+.icon_skills:hover::after {
+    content: 'Skills';
+}
+.icon_projects:hover::after {
+    content: 'Projects';
+}
+.icon_education:hover::after {
+    content: 'Education';
+}
+.icon_achievements:hover::after {
+    content: 'Achievememts';
+}
+.icon_cv:hover::after {
+    content: 'Download my CV';
+}
+.icon_language:hover::after {
+    content: 'Change language';
+}
+.icon_volume:hover::after {
+    content: 'Turn sound on/off';
+}
+.icon_mode:hover::after {
+    content: 'Able/disable dark mode';
+}
+.icon_link:hover::after {
+    bottom: 0.69rem;
+    right: 3rem;
+    content: 'Contac me';
+}
+.icon_git:hover::after {
+    top: 0;
+    right: 2.5rem;
+    content: 'Look at my way of programming';
+}
+@media (min-width: 850px) {
+
+.header_nav a:hover::after {
+    top: 0;
+    left: 40px;
+}
+.icon_home:hover::after {
+    content: 'Go to home';
+}
+.icon_about:hover::after {
+    content: 'About me';
+}
+.icon_skills:hover::after {
+    content: 'Skills';
+}
+.icon_projects:hover::after {
+    content: 'Projects';
+}
+.icon_education:hover::after {
+    content: 'Education';
+}
+.icon_achievements:hover::after {
+    content: 'Achievements';
+}
+.icon_cv:hover::after {
+    content: 'Download my CV';
+}
+.icon_language:hover::after {
+    content: 'Change language';
+}
+.icon_volume:hover::after {
+    content: 'Turn sound on/off';
+}
+.icon_mode:hover::after {
+    content: 'Able/disable dark mode';
+}
+.icon_link:hover::after {
+    bottom: 0.69rem;
+    right: 3rem;
+    content: 'Contact me';
+}
+.icon_git:hover::after {
+    top: 0;
+    right: 2.5rem;
+    content: 'Look at my way of programming';
+}
+#icon_mode:hover::after {
+    top: 0;
+    left: 40px;
+}
+#icon_volume:hover::after {
+    top: 0;
+    left: 40px;
+}
+#icon_language:hover::after {
+    top: 0;
+    left: 40px;
+}
+}
