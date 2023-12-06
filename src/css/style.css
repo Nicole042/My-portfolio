@@ -288,6 +288,7 @@ p {
 .splide__slide figure {
     border-radius: 20px;
     overflow: hidden;
+    padding: 0;
 }
 .education {
     justify-content: space-evenly;
@@ -344,9 +345,11 @@ p {
     }
 }
 @media (min-width: 850px) {
+    body {
+        font-size: 18px;
+    }
     .header_nav {
         height: 100vh;
-        max-height: 700px;
         width: 3.125rem;
         flex-direction: column;
     }
